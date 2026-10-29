@@ -253,3 +253,89 @@
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-3px); }
 }
+
+/* HaxClip 3D Continuous UI Animations & Styling */
+@keyframes hax-float-3d {
+  0%, 100% {
+    transform: perspective(1000px) translateY(0px) rotateX(0deg) rotateY(0deg);
+  }
+  25% {
+    transform: perspective(1000px) translateY(-5px) rotateX(1.5deg) rotateY(-1.5deg);
+  }
+  50% {
+    transform: perspective(1000px) translateY(-8px) rotateX(-1deg) rotateY(1.5deg);
+  }
+  75% {
+    transform: perspective(1000px) translateY(-3px) rotateX(-1.5deg) rotateY(-1deg);
+  }
+}
+
+@keyframes hax-glow-pulse {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(139, 92, 246, 0.25), 0 0 30px rgba(6, 182, 212, 0.15), inset 0 1px 1px rgba(255, 255, 255, 0.2);
+    border-color: rgba(139, 92, 246, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(139, 92, 246, 0.5), 0 0 50px rgba(6, 182, 212, 0.35), inset 0 1px 2px rgba(255, 255, 255, 0.4);
+    border-color: rgba(6, 182, 212, 0.6);
+  }
+}
+
+@keyframes hax-text-shimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.hax-card-3d {
+  transform-style: preserve-3d;
+  transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.3s ease;
+  animation: hax-float-3d 6s ease-in-out infinite;
+}
+
+.hax-card-3d:hover {
+  transform: perspective(1000px) translateY(-6px) rotateX(3deg) scale(1.008);
+  box-shadow: 0 20px 40px -15px rgba(99, 102, 241, 0.3), 0 0 25px rgba(6, 182, 212, 0.2);
+}
+
+.hax-btn-3d {
+  position: relative;
+  transform: perspective(500px) translateZ(0);
+  transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+  box-shadow: 0 4px 14px 0 rgba(124, 58, 237, 0.39), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.hax-btn-3d:hover {
+  transform: perspective(500px) translateY(-2px) translateZ(10px);
+  box-shadow: 0 6px 20px rgba(124, 58, 237, 0.55), 0 0 15px rgba(6, 182, 212, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.hax-btn-3d:active {
+  transform: perspective(500px) translateY(1px) translateZ(-5px);
+  box-shadow: 0 2px 8px rgba(124, 58, 237, 0.35);
+}
+
+.hax-text-3d {
+  background: linear-gradient(135deg, #c084fc 0%, #38bdf8 50%, #f472b6 100%);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: hax-text-shimmer 4s ease infinite;
+  text-shadow: 0 10px 20px rgba(139, 92, 246, 0.2);
+}
+
+.hax-glass-3d {
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37), inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+}
+

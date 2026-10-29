@@ -10,6 +10,7 @@ import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { FeedbackButton } from "@/components/feedback-button";
 import { PostHogIdentity } from "@/components/posthog-identity";
+import { Hax3DScene } from "@/components/ui/hax-3d-scene";
 import { intlLocale } from "@/i18n/config";
 import { APP_STORE_ID, getSiteUrl } from "@/lib/site";
 
@@ -46,10 +47,10 @@ export async function generateMetadata(): Promise<Metadata> {
   },
   description: t("description"),
   metadataBase: new URL(getSiteUrl()),
-  applicationName: "SupoClip",
-  authors: [{ name: "SupoClip Team", url: getSiteUrl() }],
-  creator: "SupoClip Team",
-  publisher: "SupoClip",
+  applicationName: "HaxClip",
+  authors: [{ name: "HaxClip Team", url: getSiteUrl() }],
+  creator: "HaxClip Team",
+  publisher: "HaxClip",
   category: t("category"),
   icons: {
     icon: "/icon.png",
@@ -60,7 +61,7 @@ export async function generateMetadata(): Promise<Metadata> {
   openGraph: {
     title: t("title"),
     description: t("openGraphDescription"),
-    siteName: "SupoClip",
+    siteName: "HaxClip",
     type: "website",
   },
   twitter: {
@@ -130,9 +131,10 @@ export default async function RootLayout({
           </>
         ) : null}
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable} ${syne.variable} antialiased`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} ${syne.variable} antialiased selection:bg-violet-500/30 selection:text-white`}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <TooltipProvider>
+            <Hax3DScene />
             {children}
             <DataFastIdentity />
             <PostHogIdentity />

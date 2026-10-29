@@ -14,6 +14,7 @@ import {
   Info,
   Menu,
   Upload,
+  Sparkles,
   X,
 } from "lucide-react";
 
@@ -146,14 +147,14 @@ function PrimaryCta({ authEnabled, label, hostedLabel, className }: {
   className?: string;
 }) {
   return authEnabled ? (
-    <Button asChild size="lg" className={cn("h-12 rounded-full px-7 text-sm", className)}>
+    <Button asChild size="lg" className={cn("h-12 rounded-full px-7 text-sm hax-btn-3d bg-gradient-to-r from-violet-600 via-indigo-600 to-cyan-500 text-white font-bold shadow-[0_0_20px_rgba(139,92,246,0.4)] hover:brightness-110 active:scale-95 transition-all", className)}>
       <Link href="/sign-up">
         {label}
         <ArrowRight className="size-4" />
       </Link>
     </Button>
   ) : (
-    <Button asChild size="lg" className={cn("h-12 rounded-full px-7 text-sm", className)}>
+    <Button asChild size="lg" className={cn("h-12 rounded-full px-7 text-sm hax-btn-3d bg-gradient-to-r from-violet-600 via-indigo-600 to-cyan-500 text-white font-bold shadow-[0_0_20px_rgba(139,92,246,0.4)] hover:brightness-110 active:scale-95 transition-all", className)}>
       <a href={HOSTED_APP_URL} target="_blank" rel="noopener noreferrer">
         {hostedLabel}
         <ExternalLink className="size-4" />
@@ -193,9 +194,11 @@ export default function LandingPage() {
               : "border-transparent bg-transparent",
           )}
         >
-          <Link href="/" className="flex items-center gap-2">
-            <Image src="/logo.png" alt="SupoClip" width={24} height={24} className="rounded-md" />
-            <span className="font-display text-[17px] font-bold tracking-tight">SupoClip</span>
+          <Link href="/" className="flex items-center gap-2.5 group">
+            <div className="relative flex items-center justify-center size-8 rounded-lg bg-gradient-to-tr from-violet-600 via-indigo-600 to-cyan-400 shadow-[0_0_15px_rgba(139,92,246,0.5)] transform-gpu transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6">
+              <Sparkles className="size-4 text-white animate-pulse" />
+            </div>
+            <span className="hax-text-3d font-display text-[19px] font-extrabold tracking-tight">HaxClip</span>
           </Link>
 
           <div className="hidden items-center gap-1 md:flex">

@@ -396,11 +396,15 @@ export default function HomeApp() {
         )}
         {upgradeState?.needsPayment && <PaymentFailedBanner className="mb-8" />}
 
-        <div className="mx-auto max-w-3xl animate-rise">
-          <h1 className="text-center font-display text-3xl font-bold tracking-tight sm:text-[2.6rem] sm:leading-tight">
+        <div className="mx-auto max-w-3xl animate-rise text-center">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-violet-500/10 text-violet-400 border border-violet-500/25 shadow-[0_0_15px_rgba(139,92,246,0.25)] animate-pulse mb-3">
+            <Wand2 className="size-3.5 text-cyan-400" />
+            <span>HaxClip 3D Studio</span>
+          </div>
+          <h1 className="text-center font-display text-3xl font-extrabold tracking-tight sm:text-[2.75rem] sm:leading-tight hax-text-3d">
             {greetingText(t, session.user.name)}
           </h1>
-          <p className="mt-2 text-center text-muted-foreground">
+          <p className="mt-2 text-center text-muted-foreground text-sm sm:text-base">
             {t("subtitle")}
           </p>
 
@@ -418,8 +422,8 @@ export default function HomeApp() {
               if (!controlsDisabled) attachFile(event.dataTransfer.files?.[0] ?? null);
             }}
             className={cn(
-              "relative mt-8 rounded-2xl border bg-background shadow-[0_1px_2px_rgb(0_0_0/0.04),0_12px_40px_-12px_rgb(0_0_0/0.12)] transition-all focus-within:border-foreground/25 focus-within:shadow-[0_1px_2px_rgb(0_0_0/0.04),0_16px_48px_-12px_rgb(0_0_0/0.18)]",
-              isDragging && "border-brand ring-4 ring-brand/15",
+              "relative mt-8 rounded-3xl border bg-background/80 hax-card-3d hax-glass-3d shadow-[0_20px_50px_-12px_rgba(99,102,241,0.25)] backdrop-blur-xl transition-all focus-within:border-cyan-500/40 focus-within:shadow-[0_0_30px_rgba(6,182,212,0.25)] text-left",
+              isDragging && "border-cyan-400 ring-4 ring-cyan-400/25",
             )}
           >
             <input
@@ -694,7 +698,7 @@ export default function HomeApp() {
                   size="icon"
                   aria-label={t("generate")}
                   disabled={!hasSource || isLoading || isClipLengthLoading}
-                  className="size-9 rounded-full bg-brand text-brand-foreground shadow-sm hover:bg-brand/90 disabled:bg-muted disabled:text-muted-foreground disabled:opacity-100"
+                  className="size-10 rounded-full hax-btn-3d bg-gradient-to-tr from-violet-600 via-indigo-600 to-cyan-400 text-white shadow-[0_0_15px_rgba(139,92,246,0.5)] hover:scale-105 active:scale-95 disabled:bg-muted disabled:text-muted-foreground disabled:opacity-40 disabled:shadow-none transition-all"
                 >
                   {isLoading ? <Loader2 className="size-4 animate-spin" /> : <ArrowUp className="size-4" />}
                 </Button>

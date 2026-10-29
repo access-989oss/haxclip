@@ -91,12 +91,16 @@ export function AppShell({ children }: { children: React.ReactNode }) {
           compact ? "w-16 items-center px-2" : "w-60 px-3",
         )}
       >
-        <Link href="/" className={cn("flex h-14 items-center gap-2 font-display text-lg font-bold tracking-tight", compact ? "justify-center" : "px-2")}>
-          <Image src="/logo.png" alt="" width={24} height={24} className="size-6" priority />
-          {!compact && "SupoClip"}
+        <Link href="/" className={cn("flex h-14 items-center gap-2.5 font-display text-lg font-bold tracking-tight group", compact ? "justify-center" : "px-2")}>
+          <div className="relative flex items-center justify-center size-8 rounded-lg bg-gradient-to-tr from-violet-600 via-indigo-600 to-cyan-400 shadow-[0_0_15px_rgba(139,92,246,0.5)] transform-gpu transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6">
+            <Sparkles className="size-4 text-white animate-pulse" />
+          </div>
+          {!compact && (
+            <span className="hax-text-3d font-extrabold text-xl tracking-tight">HaxClip</span>
+          )}
         </Link>
 
-        <SidebarLink compact={compact} href="/" label={t("nav.newGeneration")} shortcut="N" className="mb-4 mt-1 bg-foreground text-background hover:bg-foreground/90 hover:text-background">
+        <SidebarLink compact={compact} href="/" label={t("nav.newGeneration")} shortcut="N" className="mb-4 mt-1 hax-btn-3d bg-gradient-to-r from-violet-600 to-cyan-500 text-white font-semibold hover:opacity-95">
           <Plus className="size-4" />
         </SidebarLink>
 

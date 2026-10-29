@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "title": "SupoClip – Open-Source AI Video Clipper for Shorts",
+    "title": "HaxClip – Open-Source AI Video Clipper for Shorts",
     "description": "Turn long videos and Twitch or Kick VODs into captioned YouTube Shorts, TikToks, and Reels with open-source AI clipping, virality scoring, and face-aware 9:16 crops.",
     "openGraphDescription": "Turn long videos and Twitch or Kick VODs into captioned YouTube Shorts, TikToks, and Reels with open-source AI clipping.",
     "twitterDescription": "Open-source AI clipping, virality scoring, captions, and face-aware vertical crops.",
@@ -19,7 +19,7 @@
       "featureExports": "YouTube Shorts, TikTok, and Instagram Reels exports",
       "featureSelfHost": "Open-source self-hosting",
       "offerCategory": "Self-hosted open-source edition",
-      "ios": "The SupoClip iOS app: clip long videos into captioned vertical shorts from your iPhone.",
+      "ios": "The HaxClip iOS app: clip long videos into captioned vertical shorts from your iPhone.",
       "website": "Open-source AI video clipping for short-form content."
     }
   },
@@ -43,21 +43,21 @@
   "related": {
     "continueExploring": "Continue exploring",
     "keepReading": "Keep reading",
-    "relatedGuides": "Related SupoClip guides",
+    "relatedGuides": "Related HaxClip guides",
     "read": "Read"
   },
   "links": {
     "demo": {
       "label": "Demo",
       "eyebrow": "Demo",
-      "title": "See real clips SupoClip made from a long video",
+      "title": "See real clips HaxClip made from a long video",
       "description": "Watch the output, then jump to each moment in the original source video."
     },
     "ai_video_clipper": {
       "label": "AI video clipper",
       "eyebrow": "AI video clipping",
       "title": "AI video clipper for Shorts, Reels, and TikTok",
-      "description": "How SupoClip finds moments, scores candidates, reframes faces, and adds captions."
+      "description": "How HaxClip finds moments, scores candidates, reframes faces, and adds captions."
     },
     "youtube_shorts_clipper": {
       "label": "YouTube Shorts clipper",
@@ -74,13 +74,13 @@
     "blog_self_host_supoclip_docker": {
       "label": "Self-hosting guide",
       "eyebrow": "Self-hosting guide",
-      "title": "Self-host SupoClip with Docker Compose",
+      "title": "Self-host HaxClip with Docker Compose",
       "description": "Requirements, environment variables, first boot, a fully local setup, and production checks."
     },
     "blog_supoclip_vs_opusclip": {
-      "label": "SupoClip vs OpusClip",
+      "label": "HaxClip vs OpusClip",
       "eyebrow": "Comparison",
-      "title": "SupoClip vs OpusClip: a sourced comparison",
+      "title": "HaxClip vs OpusClip: a sourced comparison",
       "description": "Pricing model, deployment, watermarks, and workflow, with every claim linked to a source."
     },
     "blog_best_free_opusclip_alternative": {
@@ -90,9 +90,9 @@
       "description": "Understand the compute, provider costs, and maintenance behind a self-hosted workflow."
     },
     "blog_supoclip_vs_supo_live": {
-      "label": "SupoClip vs supo.live",
+      "label": "HaxClip vs supo.live",
       "eyebrow": "Comparison",
-      "title": "SupoClip vs supo.live: open-source control",
+      "title": "HaxClip vs supo.live: open-source control",
       "description": "Compare self-hosting, AI clipping, and editing workflows before choosing a video tool."
     },
     "sign_up": {
@@ -157,7 +157,7 @@
     },
     "blog_open_source_video_clippers": {
       "eyebrow": "Open-source comparison",
-      "title": "Compare SupoClip, Clips AI, and Auto-Editor",
+      "title": "Compare HaxClip, Clips AI, and Auto-Editor",
       "label": "Open-source video clippers",
       "description": "Choose an app, Python library, or command-line tool for the editing job you need."
     }
@@ -181,13 +181,13 @@
     "badge": "Open source and self-hostable. Also on iPhone.",
     "titleLine1": "One long video.",
     "titleLine2": "A week of shorts.",
-    "body": "SupoClip finds the moments worth posting in your videos, VODs, and uploads, reframes them to 9:16 with word-synced captions, and schedules them to YouTube Shorts.",
+    "body": "HaxClip finds the moments worth posting in your videos, VODs, and uploads, reframes them to 9:16 with word-synced captions, and schedules them to YouTube Shorts.",
     "startClipping": "Start clipping",
     "useHosted": "Use Hosted App",
     "viewSource": "View Source",
-    "appStoreAria": "Download SupoClip on the App Store",
+    "appStoreAria": "Download HaxClip on the App Store",
     "appStoreAlt": "Download on the App Store",
-    "productHuntAlt": "SupoClip - Open-source AI clipper: long videos into viral shorts | Product Hunt",
+    "productHuntAlt": "HaxClip - Open-source AI clipper: long videos into viral shorts | Product Hunt",
     "sources": {
       "upload": "Your own files",
       "label": "Clip from"
@@ -205,7 +205,7 @@
       "scheduled": "Scheduled",
       "steps": {
         "source": "Your long video",
-        "clip": "The clip SupoClip found",
+        "clip": "The clip HaxClip found",
         "post": "Scheduled to YouTube"
       },
       "longForm": "Long video",
@@ -292,7 +292,7 @@
   "editor": {
     "eyebrow": "Editor",
     "title": "A whole editor, built in",
-    "body": "Every clip opens in a studio made for short-form. Cut, fix a word, restyle captions, reframe, and export without leaving SupoClip.",
+    "body": "Every clip opens in a studio made for short-form. Cut, fix a word, restyle captions, reframe, and export without leaving HaxClip.",
     "tryIt": "This preview works. Click the tabs, switch the framing, drag the sliders.",
     "points": {
       "timeline": {
@@ -332,7 +332,7 @@
   "publish": {
     "eyebrow": "New: publishing",
     "title": "Clip it once. Post it all week.",
-    "body": "Connect your YouTube channel and every clip can go out on its own schedule. Pick a time, review the AI-drafted title, and SupoClip posts it for you.",
+    "body": "Connect your YouTube channel and every clip can go out on its own schedule. Pick a time, review the AI-drafted title, and HaxClip posts it for you.",
     "platforms": {
       "youtube": "YouTube Shorts",
       "tiktok": "TikTok",
@@ -353,7 +353,7 @@
       },
       "learn": {
         "title": "Learns what your audience watches",
-        "description": "Views flow back into SupoClip, so future picks lean toward what performs on your channel."
+        "description": "Views flow back into HaxClip, so future picks lean toward what performs on your channel."
       }
     },
     "plan": "Scheduling is included in Creator. Publishing right away works on Pro.",
@@ -421,10 +421,10 @@
     "items": {
       "sources": {
         "question": "What videos can I clip?",
-        "answer": "YouTube videos, Twitch and Kick VODs or clips, and files you upload yourself. Paste a link or drag in a recording, and SupoClip takes it from there."
+        "answer": "YouTube videos, Twitch and Kick VODs or clips, and files you upload yourself. Paste a link or drag in a recording, and HaxClip takes it from there."
       },
       "selection": {
-        "question": "How does SupoClip choose the clips?",
+        "question": "How does HaxClip choose the clips?",
         "answer": "It transcribes the video word by word, then an AI model reads the whole transcript and picks moments that stand on their own. Each one is scored for hook, engagement, value, and shareability, and you can trim, split, or merge any clip afterwards."
       },
       "minutes": {
@@ -432,12 +432,12 @@
         "answer": "Plans are measured in minutes of source video, not in clips. Pro includes {proHours} hours a month and Creator {creatorHours} hours. A 30-minute video uses 30 minutes, however many clips come out of it. Allowances reset every month, on yearly plans too."
       },
       "publishing": {
-        "question": "Can SupoClip post to TikTok and Instagram?",
+        "question": "Can HaxClip post to TikTok and Instagram?",
         "answer": "Today you can publish straight to YouTube Shorts: right away on Pro, or on a schedule with Creator. TikTok and Instagram are coming soon. Until then, download clips with the TikTok and Reels export presets and upload them yourself."
       },
       "watermark": {
         "question": "Do clips have a watermark?",
-        "answer": "No. SupoClip never adds a watermark, on hosted plans or when you self-host."
+        "answer": "No. HaxClip never adds a watermark, on hosted plans or when you self-host."
       },
       "languages": {
         "question": "Does it work in other languages?",
@@ -445,7 +445,7 @@
       },
       "selfHost": {
         "question": "Is it really free to self-host?",
-        "answer": "Yes. SupoClip is open source under AGPL-3.0 and runs with Docker Compose on your own machine. You only pay for the transcription and AI providers you choose, if any."
+        "answer": "Yes. HaxClip is open source under AGPL-3.0 and runs with Docker Compose on your own machine. You only pay for the transcription and AI providers you choose, if any."
       },
       "cancel": {
         "question": "Can I cancel anytime?",
@@ -464,16 +464,16 @@
       "docker": "One Docker Compose command to run it yourself",
       "models": "Bring your own models: Gemini, OpenAI, Anthropic, or Ollama"
     },
-    "ready": "SupoClip is running on localhost:3107"
+    "ready": "HaxClip is running on localhost:3107"
   },
   "guides": {
     "eyebrow": "Guides and comparisons",
     "title": "Learn the complete clipping workflow",
-    "body": "Practical, source-backed pages for choosing a video clipper, self-hosting SupoClip, and turning long recordings into short-form content.",
+    "body": "Practical, source-backed pages for choosing a video clipper, self-hosting HaxClip, and turning long recordings into short-form content.",
     "read": "Read guide"
   },
   "cta": {
     "title": "Your next video is already a week of content.",
-    "body": "Paste a link and see what SupoClip finds. Use the hosted app, or self-host the open-source version for free."
+    "body": "Paste a link and see what HaxClip finds. Use the hosted app, or self-host the open-source version for free."
   }
 }
